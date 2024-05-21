@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITELIST EVOLUZION ROLEPLAY</title>
+    <style>
+        body {
+            background-color: #5582ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #inputContainer {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4062c1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Menambahkan padding ke bawah pada kotak putih */
+        #inputContainer {
+            margin-bottom: 50px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inputContainer">
+        <h2>WL EVOLUZION</h2>
+        <input type="text" id="nama" placeholder="NAMA IC">
+        <span id="namaError" class="error"></span>
+        <br>
+      
+        <input type="tel" id="nomorTelepon" placeholder="NOMOR HP">
+        <span id="teleponError" class="error"></span>
+        <br>
+        <input type="email" id="email" placeholder="GMAIL">
+        <span id="emailError" class="error"></span>
+        <br>
+            <input type="text" id="nama" placeholder="UMUR OOC">
+        <span id="namaError" class="error"></span>
+        <br>
+            <input type="tel" id="nama" placeholder="TINGGI BADAN IC">
+        <span id="namaError" class="error"></span>
+        <br>
+            <input type="tel" id="nomorTelpon" placeholder="BERAT BADAN IC">
+        <span id="nomortelpon" class="error"></span>
+        <br>
+            <input type="text" id="nama" placeholder="AGAMA IC">
+        <span id="namaError" class="error"></span>
+        <br>
+        
+        <button onclick="validateForm()">GASSKEN</button>
+    </div>
+ <script>
+        function validateForm() {
+            var nama = document.getElementById("nama").value;
+            var nomorTelepon = document.getElementById("nomorTelepon").value;
+            var email = document.getElementById("email").value;
+
+            if (nama !== "" && nomorTelepon !== "" && email !== "") {
+                // Form berhasil diisi, arahkan ke link website lain
+                window.location.href = "https://api.whatsapp.com/send?phone=62882147643606&text=WL+Nama_Kamu";
+            } else {
+                alert("Mohon lengkapi semua formulir dengan benar!");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+    }
+
+    h2 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
