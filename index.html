@@ -1,90 +1,114 @@
+<h1>‎ </h1>
+<p></p>
+<h1>‎ </h1>
+<h1>‎ </h1>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WHITELIST EVOLUZION ROLEPLAY</title>
+    <title>Login Page</title>
     <style>
         body {
-            background-color: #5582ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
         }
 
-        #inputContainer {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 0px;
             text-align: center;
+            background-color: #f;
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
-        input {
-            width: 200px;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            width: 100%;
+        }
+
+        .input-container input {
+            width: 100%;
+            
         }
 
         button {
-            padding: 10px;
-            background-color: #4062c1;
+            background-color: #4CAF50;
             color: white;
+            padding: 10px 10px;
+            margin: 9px 0;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            width: 30%;
+            font-size: 16px;
+            border-radius: 4px;
         }
 
-        /* Menambahkan padding ke bawah pada kotak putih */
-        #inputContainer {
-            margin-bottom: 50px;
+        button:hover {
+            opacity: 0.8;
         }
 
-        .error {
+        .error-message {
             color: red;
-            font-size: 12px;
-            margin-top: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div id="inputContainer">
-        <h2>WL EVOLUZION</h2>
-        <input type="text" id="nama" placeholder="NAMA IC">
-        <span id="namaError" class="error"></span>
-        <br>
-      
-        <input type="tel" id="nomorTelepon" placeholder="TINGGI BADAN">
-        <span id="teleponError" class="error"></span>
-        <br>
-        <input type="tel" id="email" placeholder="BERAT BADAN">
-        <span id="emailError" class="error"></span>
-        <br>
-            
+<div class="container">
+   
+  <form>
+  <div class="titit">
+    <label for="password">‎NAMA KARAKTER‎‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </label>
+    <input type="text" id="nama" name="password" required>
+  </div><br>
+  <button type="button" onclick="redirectToLink()">REGISTER</button>
+</form>
+<script>
+function redirectToLink() {
+  var nama = document.getElementById("nama").value;
+  var link = "https://api.whatsapp.com/send?phone=6289510193409&text=WL+" + nama.toLowerCase() + "";
+  
+  window.location.href = link;
+}
+</script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Text Styling</title>
+<style>
+    /* CSS untuk mengatur lebar, posisi, dan warna teks */
+    .custom-text {
+        width: 345px; /* Atur lebar teks */
+        margin: 0 auto; /* Pusatkan teks */
+        position: relative; /* Mengatur posisi teks */
+        top: 50%; /* Geser teks ke tengah vertikal */
+        transform: translateY(2%); /* Geser teks ke tengah vertikal */
+        color: #f7f8fa; /* Warna teks */
+    }
+</style>
+</head>
+<body>
 
-        <br>
-        
-        <button onclick="validateForm()">GASSKEN</button>
-    </div>
- <script>
-        function validateForm() {
-            var nama = document.getElementById("nama").value;
-            var nomorTelepon = document.getElementById("nomorTelepon").value;
-            var email = document.getElementById("email").value;
-
-            if (nama !== "" && nomorTelepon !== "" && email !== "") {
-                // Form berhasil diisi, arahkan ke link website lain
-                window.location.href = "https://api.whatsapp.com/send?phone=6289510193409&text=WL+Nama_Kamu";
-            } else {
-                alert("Mohon lengkapi semua formulir dengan benar!");
-            }
-        }
-    </script>
+<div class="custom-text">
+    <h4></h4>
+</div>
 
 </body>
 </html>
@@ -92,16 +116,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Text Styling</title>
+<style>
+    /* CSS untuk mengatur lebar, posisi, dan warna teks */
+    .titit {
+        width: 345px; /* Atur lebar teks */
+        margin: 5 auto; /* Pusatkan teks */
+        position: relative; /* Mengatur posisi teks */
+        top: 50%; /* Geser teks ke tengah vertikal */
+        transform: translateY(2%); /* Geser teks ke tengah vertikal */
+        color: #f7f8fa; /* Warna teks */
+    }
+</style>
+</head>
+<body>
+    
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Text Styling</title>
+<style>
+    /* CSS untuk mengatur lebar, posisi, dan warna teks */
+    .titit {
+        width: 345px; /* Atur lebar teks */
+        margin: 5 auto; /* Pusatkan teks */
+        position: relative; /* Mengatur posisi teks */
+        top: 50%; /* Geser teks ke tengah vertikal */
+        transform: translateY(2%); /* Geser teks ke tengah vertikal */
+        color: #f7f8fa; /* Warna teks */
+    }
+</style>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @keyframes colorBlink {
-      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
-      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
-      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
-    }
-
-    h2 {
-      animation: colorBlink 3s infinite;
+    body {
+      background-image: url('https://a.top4top.io/p_3066vhtnn0.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
   </style>
+  
+</head>
+<body>
+  <!-- Your website content goes here -->
+</body>
+</html>
+
+    
