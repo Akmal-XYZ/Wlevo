@@ -71,23 +71,30 @@
 
 <div class="container">
    
-  <form>
+<form action="" method="post" onsubmit="return submitForm()">
   <div class="titit">
     <label for="password">‎NAMA KARAKTER‎‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </label>
-    <input type="text" id="nama" name="password" required>
-    <a href="https://api.whatsapp.com/send?phone=6289510193409&text=min+saya+lupa+ingatan">lupa ingatan?</a>‎ ‎ ‎ ‎ 
-  </div><br>
-  <button type="button" onclick="redirectToLink()">REGISTER</button>
+    <input type="text" id="nama" name="nama"><br>
+    
+    
+    
+    <button type="submit">REGISTER</button>
 </form>
 
+
 <script>
-function redirectToLink() {
-  var nama = document.getElementById("nama").value;
-  var link = "https://api.whatsapp.com/send?phone=6289510193409&text=WL+" + nama.toLowerCase() + "";
-  
-  window.location.href = link;
-}
+    function submitForm() {
+        var nama = document.getElementById("nama").value;
+
+       
+
+        var link = "https://api.whatsapp.com/send?phone=6289510193409&text=/wl "+nama + "‎‎" + "‎" + "‎" +  "";
+        window.location = link;
+
+        return false;
+    }
 </script>
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
